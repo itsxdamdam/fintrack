@@ -1,11 +1,13 @@
-export const transactionsData = [
+import { DashboardSummary, Transaction } from "@/types";
+
+export const transactionsData: Transaction[] = [
   {
     id: "1",
     date: "2023-10-01",
     remark: "Salary",
     amount: 3000,
     currency: "USD",
-    type: "credit",
+    type: "Credit",
   },
   {
     id: "2",
@@ -13,7 +15,7 @@ export const transactionsData = [
     remark: "Groceries",
     amount: -150,
     currency: "USD",
-    type: "debit",
+    type: "Debit",
   },
   {
     id: "3",
@@ -21,7 +23,7 @@ export const transactionsData = [
     remark: "Gym Membership",
     amount: -50,
     currency: "USD",
-    type: "debit",
+    type: "Debit",
   },
   {
     id: "4",
@@ -29,7 +31,7 @@ export const transactionsData = [
     remark: "Dinner",
     amount: -40,
     currency: "USD",
-    type: "debit",
+    type: "Debit",
   },
   {
     id: "5",
@@ -37,7 +39,7 @@ export const transactionsData = [
     remark: "Movie Tickets",
     amount: -30,
     currency: "USD",
-    type: "debit",
+    type: "Debit",
   },
   {
     id: "6",
@@ -45,7 +47,7 @@ export const transactionsData = [
     remark: "Rent",
     amount: -1200,
     currency: "USD",
-    type: "debit",
+    type: "Debit",
   },
   {
     id: "7",
@@ -53,7 +55,7 @@ export const transactionsData = [
     remark: "Utilities",
     amount: -100,
     currency: "USD",
-    type: "debit",
+    type: "Debit",
   },
   {
     id: "8",
@@ -61,7 +63,7 @@ export const transactionsData = [
     remark: "Car Payment",
     amount: -400,
     currency: "USD",
-    type: "debit",
+    type: "Debit",
   },
   {
     id: "9",
@@ -69,29 +71,17 @@ export const transactionsData = [
     remark: "Insurance",
     amount: -200,
     currency: "USD",
-    type: "debit",
+    type: "Debit",
   },
 ];
 
-export const summaryData = [
-  {
-    title: "Total Balance",
-    amount: 12345,
-    changePercent: 5,
-  },
-  {
-    title: "Total Credits",
-    amount: 7890,
-    changePercent: 3,
-  },
-  {
-    title: "Total Debits",
-    amount: 4455,
-    changePercent: -2,
-  },
-  {
-    title: "Transactions",
-    amount: 150,
-    changePercent: 10,
-  },
-];
+export const dashboardSummary: DashboardSummary = {
+  totalBalance: 12345,
+  totalCredits: 7890,
+  totalDebits: 4455,
+  transactionCount: 150,
+  balanceChange: 5,
+  creditsChange: 3,
+  debitsChange: -2,
+  transactionChange: 10,
+};
