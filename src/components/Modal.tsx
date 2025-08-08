@@ -4,7 +4,7 @@ import Link from "next/link";
 const Modal = ({ bgColor, items }: ModalProps) => {
   return (
     <div
-      className={`bg-${bgColor} absolute top-14 rounded-3xl text-lg text-amber-50`}
+      className={`bg-${bgColor} absolute top-14 rounded-3xl text-lg text-amber-50 z-50`}
     >
       <ul className="flex justify-center items-center flex-col gap-3">
         {items.map((item, index) => (

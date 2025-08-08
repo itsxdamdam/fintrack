@@ -8,7 +8,7 @@ import React from "react";
 const Sidebar = () => {
   const pathname = usePathname();
   return (
-    <section className="flex flex-col w-[25%] mt-3">
+    <section className="flex flex-col w-[25%] mt-3 text-x gap-6">
       {sidebarLinks.map((link, index) => {
         const isActive = pathname === link.route;
 
