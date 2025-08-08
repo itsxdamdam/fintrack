@@ -85,3 +85,31 @@ export const dashboardSummary: DashboardSummary = {
   debitsChange: -2,
   transactionChange: 10,
 };
+
+export const headerBoxImages = [
+  {
+    id: "Ava",
+    image: "/icons/profile-1.svg",
+  },
+  { id: "Liam", image: "/icons/profile-2.svg", position: "30px" },
+  { id: "Noah", image: "/icons/profile-3.svg", position: "60px" },
+  { id: "Noah", image: "/icons/profile-4.svg", position: "200px" },
+];
+
+export const headerBoxNames = [
+  { name: "Ava" },
+  { name: "Liam" },
+  { name: "Noah" },
+  { name: "Ava" },
+  { name: "Liam" },
+  { name: "Noah" },
+  { name: "Ava" },
+  { name: "Liam" },
+  { name: "Noah" },
+  { name: "Ava" },
+  { name: "Liam" },
+  { name: "Noah" },
+  { name: "Ava" },
+  { name: "Liam" },
+  { name: "Noah" },
+];

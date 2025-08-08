@@ -26,5 +26,10 @@ export interface SummaryCardData {
 
 export interface ModalProps {
   bgColor: string;
-  items: string[]
+  items: string[];
+}
+
+export interface HeaderBoxProps {
+  title: string;
+  status: string;
 }
