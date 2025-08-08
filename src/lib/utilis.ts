@@ -26,3 +26,16 @@ export function dashboardSummaryToCard(
     },
   ];
 }
+
+export const formatCurrency = (value: number): string =>
+  new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  }).format(value);
+
+export const formatDate = (value: string): string =>
+  new Intl.DateTimeFormat("en-GB", {
+    dateStyle: "medium",
+  }).format(new Date(value));

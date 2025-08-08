@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderBox from "./HeaderBox";
 import Tabs from "./Tabs";
+import Summary from "./Summary";
 
 const Dashboard = () => {
   return (

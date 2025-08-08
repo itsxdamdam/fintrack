@@ -34,4 +34,8 @@
   .header-box-title {
     @apply flex gap-4 justify-between items-center;
   }
+
+  .cards {
+    @apply flex justify-between items-center
+  }
 }
