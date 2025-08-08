@@ -18,7 +18,7 @@
   }
 
   .status {
-    @apply rounded-2xl flex justify-between items-center bg-[#386776]/20 text-[#1B2528] font-medium text-2xl py-2 px-3 w-[120px];
+    @apply rounded-2xl flex justify-between items-center bg-[#386776]/20 text-[#1B2528] font-medium text-2xl py-2 px-3 w-[110px];
   }
 
   .user-icons {
