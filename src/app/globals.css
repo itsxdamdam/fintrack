@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@layer utilities {
+  .nav-icons {
+    @apply w-auto h-[30px] cursor-pointer;
+  }
+
+  .logo {
+    @apply w-[100%] h-auto;
+  }
+}

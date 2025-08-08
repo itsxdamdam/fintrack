@@ -1,17 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Sidebar from "../components/Sidebar";
+import { Public_Sans } from 'next/font/google';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const publicSans = Public_Sans({
+  subsets: ['latin'],
+  display: 'swap', // or 'auto', 'block', 'fallback', 'optional'
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+
 
 export const metadata: Metadata = {
   title: "Fintrack",
@@ -23,13 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
-      >
-        <Sidebar />
-        {children}
-      </body>
+    <html lang="en" className={publicSans.className}>
+      <body>{children}</body>
     </html>
   );
 }

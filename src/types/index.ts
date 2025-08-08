@@ -23,3 +23,8 @@ export interface SummaryCardData {
   amount: number;
   changePercent: number;
 }
+
+export interface ModalProps {
+  bgColor: string;
+  items: string[]
+}
