@@ -34,7 +34,7 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({
 
   return (
     <div className="mt-10">
-      <table className="border-seperate  w-full">
+      <table className="border-seperate w-full">
         <thead>
           <tr className="text-left">
             <th onClick={toggleSort} className="table-item text-[#15272D]/60">
