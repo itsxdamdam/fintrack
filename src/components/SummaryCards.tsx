@@ -9,14 +9,14 @@ interface Props {
 
 const SummaryCards = ({ data }: Props) => {
   return (
-    <div className="flex gap-6 items-center flex-wrap md:flex-nowrap">
+    <div className="flex gap-6 items-center flex-wrap md:flex-nowrap w-full">
       {data.map((card, index) => {
         const isPositive = card.changePercent >= 0;
 
         return (
           <div
             key={index}
-            className="bg-[#386776]/10 rounded-3xl p-4 shadow-sm text-[#020303] flex justify-between"
+            className="bg-[#386776]/10 rounded-3xl p-4 shadow-sm text-[#020303] flex justify-between w-full"
           >
             <div className="flex flex-col gap-7 items-start">
               <h3 className="text-xl font-bold">{card.title}</h3>

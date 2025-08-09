@@ -10,8 +10,8 @@ const Sidebar = ({ showSidebar }: SidebarProps) => {
 
   return (
     <section
-      className={`flex flex-col mt-3 text-x gap-6 ${
-        showSidebar ? "w-[25%]" : "hidden"
+      className={`flex flex-col mt-3 text-x gap-6 absolute md:static h-[50vh] top-20 rounded-2xl bg-amber-100 z-50 p-10 pl-2 ${
+        showSidebar ? "md:w-[25%]" : "hidden"
       }`}
     >
       {sidebarLinks.map((link, index) => {
