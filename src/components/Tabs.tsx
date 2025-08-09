@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import OverviewTab from "./OverviewTab";
+import TransactionsTable from "./TransactionTable";
+import { transactionsData } from "@/app/data";
 
 type Tabs = "Overview" | "Transactions";
 
@@ -36,7 +38,7 @@ export default function Tabs() {
       <div className="">
         {activeTab === "Overview" && <OverviewTab />}
         {activeTab === "Transactions" && (
-          <div className="text-gray-800">This is content for Tab 2</div>
+          <TransactionsTable transactions={transactionsData}/>
         )}
       </div>
     </div>

@@ -14,11 +14,11 @@
   }
 
   .dot {
-    @apply w-2 h-2;
+    @apply w-2 h-2 rounded-[100%];
   }
 
   .status {
-    @apply rounded-2xl flex justify-between items-center bg-[#386776]/20 text-[#1B2528] font-medium text-2xl py-2 px-3 w-[110px];
+    @apply rounded-2xl bg-[#386776]/20 text-[#1B2528] font-medium text-2xl py-2 px-3 flex items-center gap-2;
   }
 
   .user-icons {
@@ -28,6 +28,10 @@
   .header-user-display {
     @apply flex justify-between items-center w-[85%] text-[#15272D]/60 font-medium;
   }
+
+  .table-item {
+    @apply cursor-pointer font-medium p-2 w-64 text-lg border-b-3 border-[#49656E]/20;
+  }
 }
 
 @layer components {
@@ -36,6 +40,6 @@
   }
 
   .cards {
-    @apply flex justify-between items-center
+    @apply flex justify-between items-center;
   }
 }

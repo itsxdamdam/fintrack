@@ -20,13 +20,13 @@ const HeaderBox = ({ title, status }: HeaderBoxProps) => {
               />
             </button>
             <div className="status">
-              <div
+              <span
                 className={
                   status === "Active"
                     ? "bg-green-600 rounded-[100%] dot"
                     : "bg-red-600 rounded-[100%] dot"
                 }
-              ></div>
+              ></span>
               {status}
             </div>
           </div>
