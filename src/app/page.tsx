@@ -2,10 +2,10 @@ import Dashboard from "@/components/Dashboard";
 
 export default function Home() {
   return (
-    <main className="">
-      <div className="flex container mx-auto px-20 mt-5 w-full">
+    <div className="w-full">
+      <div className="flex container mx-auto px-20 w-full">
         <Dashboard />
       </div>
-    </main>
+    </div>
   );
 }

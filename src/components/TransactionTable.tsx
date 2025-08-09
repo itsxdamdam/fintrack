@@ -33,7 +33,7 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({
   const toggleSort = () => setSortAsc((prev) => !prev);
 
   return (
-    <div className="mt-10">
+    <div className="mt-5">
       <table className="border-seperate w-full">
         <thead>
           <tr className="text-left">
