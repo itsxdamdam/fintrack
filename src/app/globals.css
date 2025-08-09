@@ -6,7 +6,7 @@
   }
 
   .caret {
-    @apply w-auto h-[40px] cursor-pointer;
+    @apply w-auto h-[35px] cursor-pointer;
   }
 
   .logo {
@@ -18,7 +18,7 @@
   }
 
   .status {
-    @apply rounded-2xl bg-[#386776]/20 text-[#1B2528] font-medium text-2xl py-2 px-3 flex items-center gap-2;
+    @apply rounded-2xl bg-[#386776]/20 text-[#1B2528] font-medium text-xl py-1 px-3 flex items-center gap-2;
   }
 
   .user-icons {
@@ -26,7 +26,7 @@
   }
 
   .header-user-display {
-    @apply flex justify-between items-center w-[85%] text-[#15272D]/60 font-medium;
+    @apply flex justify-between items-center text-[#15272D]/60 font-medium;
   }
 
   .table-item {

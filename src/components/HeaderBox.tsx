@@ -8,8 +8,8 @@ const HeaderBox = ({ title, status }: HeaderBoxProps) => {
     <header className="w-full">
       <div className="flex justify-between items-start">
         <div className="flex flex-col justify-between items-start gap-5">
-          <div className="header-box-title">
-            <h1 className="text-6xl font-bold">{title}</h1>
+          <div className="header-box-title gap-1">
+            <h1 className="text-5xl font-bold">{title}</h1>
             <button>
               <Image
                 src="/icons/caret-down.svg"
@@ -30,8 +30,8 @@ const HeaderBox = ({ title, status }: HeaderBoxProps) => {
               {status}
             </div>
           </div>
-          <div className="header-user-display ">
-            <div className="flex relative">
+          <div className="header-user-display gap-3">
+            <div className="flex items-center">
               <Image
                 src="/icons/profile-1.svg"
                 alt="user image"
@@ -44,31 +44,31 @@ const HeaderBox = ({ title, status }: HeaderBoxProps) => {
                 alt="user image"
                 width={0}
                 height={0}
-                className="user-icons absolute left-[40px] z-8"
+                className="user-icons ml-[-15px] z-8"
               />
               <Image
                 src="/icons/profile-3.svg"
                 alt="user image"
                 width={0}
                 height={0}
-                className="user-icons absolute left-[85px] z-5"
+                className="user-icons  ml-[-15px] z-5"
               />
               <Image
                 src="/icons/profile-4.svg"
                 alt="user image"
                 width={0}
                 height={0}
-                className="user-icons absolute left-[125px] z-3"
+                className="user-icons  ml-[-15px] z-3"
               />
             </div>
-            <div className="flex justify-between items-center text-2xl">
+            <div className="flex items-center text-xl gap-2">
               {headerBoxNames.map((user, index) => {
                 {
                   if (index < 3) {
                     return (
                       <p key={index}>
                         {user.name}
-                        {index < 2 && ","}&nbsp;
+                        {index < 2 && ","}
                       </p>
                     );
                   }
