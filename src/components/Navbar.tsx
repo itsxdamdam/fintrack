@@ -7,7 +7,7 @@ import { useState } from "react";
 import Modal from "./Modal";
 // import React from "react";
 
-const Navbar = () => {
+const Navbar = ({menu}) => {
   const [showModal, setShowModal] = useState(false);
 
   const handleModal = () => {
@@ -17,16 +17,17 @@ const Navbar = () => {
   const TopMenuList = ["Transfer", "Withdraw", "Block", "Delete"];
 
   return (
-    <nav className="py-5">
-      <div className="container mx-auto px-20">
+    <nav>
+      <div>
         <div className="flex justify-between items-center">
-          <div className="flex gap-3">
+          <div className="flex gap-3 items-center">
             <Image
               src="/icons/menu.svg"
               alt="menu"
               width={0}
               height={0}
               className="nav-icons"
+              onClick={menu}
             />
             <Link href="/">
               <Image

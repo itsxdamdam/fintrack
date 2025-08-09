@@ -33,3 +33,7 @@ export interface HeaderBoxProps {
   title: string;
   status: string;
 }
+
+export interface SidebarProps {
+  showSidebar: boolean
+}

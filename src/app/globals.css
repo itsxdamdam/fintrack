@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 @layer utilities {
+  .main-container {
+    @apply px-30 w-full mx-auto py-5;
+  }
+
   .nav-icons {
-    @apply w-auto h-[30px] cursor-pointer;
+    @apply w-auto h-[25px] cursor-pointer;
   }
 
   .caret {
@@ -10,7 +14,7 @@
   }
 
   .logo {
-    @apply w-[100%] h-auto;
+    @apply w-[100%] h-[100%];
   }
 
   .dot {
@@ -30,14 +34,12 @@
   }
 
   .table-item {
-    @apply cursor-pointer font-medium p-2 ;
+    @apply cursor-pointer font-medium p-2;
   }
 
   .table-item-status {
-    @apply  rounded-2xl bg-[#386776]/20 text-[#1B2528] font-medium px-3 flex items-center gap-2
+    @apply rounded-2xl bg-[#386776]/20 text-[#1B2528] font-medium px-3 flex items-center gap-2;
   }
-
- 
 }
 
 @layer components {
