@@ -33,7 +33,7 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({
   const toggleSort = () => setSortAsc((prev) => !prev);
 
   return (
-    <div className="mt-5">
+    <div className="mt-5 text-[#1B2528]">
       <table className="border-seperate w-full">
         <thead>
           <tr className="text-left">
@@ -51,11 +51,7 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({
             <tr key={index}>
               <td className="table-item hover:bg-gray-50`">{tx.date}</td>
               <td className="table-item hover:bg-gray-50">{tx.remark}</td>
-              <td
-                className={`table-item hover:bg-gray-50 font-semibold ${
-                  tx.amount > 0 ? "text-green-600" : "text-red-600"
-                }`}
-              >
+              <td className="table-item hover:bg-gray-50 font-semibold">
                 {formatCurrency(tx.amount)}
               </td>
               <td className="table-item hover:bg-gray-50">{tx.currency}</td>
