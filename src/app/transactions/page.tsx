@@ -4,7 +4,8 @@ import { transactionsData } from "../data";
 
 const TransactionPage = () => {
   return (
-    <div>
+    <div className="w-full">
+      <h1 className="text-2xl font-bold">Transactions</h1>
       <TransactionTable transactions={transactionsData} />
     </div>
   );
