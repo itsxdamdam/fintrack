@@ -41,21 +41,21 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({
               onClick={toggleSort}
               className="table-item text-[#15272D]/60 w-84"
             >
-              <div className="border-b-3 border-[#49656E]/20">
+              <div className="border-b-2 border-[#49656E]/20">
                 Date {sortAsc ? "▲" : "▼"}
               </div>
             </th>
             <th className="table-item text-[#15272D]/60 w-50">
-              <div className="border-b-3 border-[#49656E]/20">Remark ▼</div>
+              <div className="border-b-2 border-[#49656E]/20">Remark ▼</div>
             </th>
             <th className="table-item text-[#15272D]/60 w-50">
-              <div className="border-b-3 border-[#49656E]/20">Amount ▼</div>
+              <div className="border-b-2 border-[#49656E]/20">Amount ▼</div>
             </th>
             <th className="table-item text-[#15272D]/60 w-50">
-              <div className="border-b-3 border-[#49656E]/20">Currency ▼</div>
+              <div className="border-b-2 border-[#49656E]/20">Currency ▼</div>
             </th>
             <th className="table-item text-[#15272D]/60 w-40">
-              <div className="border-b-3 border-[#49656E]/20">Type ▼</div>
+              <div className="border-b-2 border-[#49656E]/20">Type ▼</div>
             </th>
           </tr>
         </thead>
@@ -63,9 +63,7 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({
           {filteredTransactions.map((tx, index) => (
             <tr key={index}>
               <td className="table-item hover:bg-gray-50`">
-                <div className="border-b-2 border-[#49656E]/20">
-                  {tx.date}
-                </div>
+                <div className="border-b-2 border-[#49656E]/20">{tx.date}</div>
               </td>
               <td className="table-item hover:bg-gray-50">
                 <div className="border-b-2 border-[#49656E]/20">
@@ -82,16 +80,18 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({
                   {tx.currency}
                 </div>
               </td>
-              <td className="hover:bg-gray-50 border-b-3 border-[#49656E]/20 cursor-pointer">
-                <div className="table-item-status">
-                  <span
-                    className={` dot ${
-                      tx.amount > 0
-                        ? "bg-green-600 rounded-[100%] "
-                        : "bg-red-600 rounded-[100%] "
-                    }`}
-                  ></span>
-                  {tx.type}
+              <td className="hover:bg-gray-50 cursor-pointer">
+                <div className="border-b-2 pb-2 border-[#49656E]/20">
+                  <div className="table-item-status ">
+                    <span
+                      className={` dot ${
+                        tx.amount > 0
+                          ? "bg-green-600 rounded-[100%] "
+                          : "bg-red-600 rounded-[100%] "
+                      }`}
+                    ></span>
+                    {tx.type}
+                  </div>
                 </div>
               </td>
             </tr>
