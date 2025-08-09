@@ -59,15 +59,17 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({
                 {formatCurrency(tx.amount)}
               </td>
               <td className="table-item hover:bg-gray-50">{tx.currency}</td>
-              <td className="table-item hover:bg-gray-50   status">
-                <span
-                  className={` dot ${
-                    tx.amount > 0
-                      ? "bg-green-600 rounded-[100%] "
-                      : "bg-red-600 rounded-[100%] "
-                  }`}
-                ></span>
-                {tx.type}
+              <td className="hover:bg-gray-50 border-b-3 border-[#49656E]/20 cursor-pointer">
+                <div className="table-item-status">
+                  <span
+                    className={` dot ${
+                      tx.amount > 0
+                        ? "bg-green-600 rounded-[100%] "
+                        : "bg-red-600 rounded-[100%] "
+                    }`}
+                  ></span>
+                  {tx.type}
+                </div>
               </td>
             </tr>
           ))}
