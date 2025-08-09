@@ -37,24 +37,51 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({
       <table className="border-seperate w-full">
         <thead>
           <tr className="text-left">
-            <th onClick={toggleSort} className="table-item text-[#15272D]/60">
-              Date {sortAsc ? "▲" : "▼"}
+            <th
+              onClick={toggleSort}
+              className="table-item text-[#15272D]/60 w-84"
+            >
+              <div className="border-b-3 border-[#49656E]/20">
+                Date {sortAsc ? "▲" : "▼"}
+              </div>
             </th>
-            <th className="table-item text-[#15272D]/60">Remark</th>
-            <th className="table-item text-[#15272D]/60">Amount</th>
-            <th className="table-item text-[#15272D]/60">Currency</th>
-            <th className="table-item text-[#15272D]/60">Type</th>
+            <th className="table-item text-[#15272D]/60 w-50">
+              <div className="border-b-3 border-[#49656E]/20">Remark ▼</div>
+            </th>
+            <th className="table-item text-[#15272D]/60 w-50">
+              <div className="border-b-3 border-[#49656E]/20">Amount ▼</div>
+            </th>
+            <th className="table-item text-[#15272D]/60 w-50">
+              <div className="border-b-3 border-[#49656E]/20">Currency ▼</div>
+            </th>
+            <th className="table-item text-[#15272D]/60 w-40">
+              <div className="border-b-3 border-[#49656E]/20">Type ▼</div>
+            </th>
           </tr>
         </thead>
         <tbody>
           {filteredTransactions.map((tx, index) => (
             <tr key={index}>
-              <td className="table-item hover:bg-gray-50`">{tx.date}</td>
-              <td className="table-item hover:bg-gray-50">{tx.remark}</td>
-              <td className="table-item hover:bg-gray-50 font-semibold">
-                {formatCurrency(tx.amount)}
+              <td className="table-item hover:bg-gray-50`">
+                <div className="border-b-2 border-[#49656E]/20">
+                  {tx.date}
+                </div>
               </td>
-              <td className="table-item hover:bg-gray-50">{tx.currency}</td>
+              <td className="table-item hover:bg-gray-50">
+                <div className="border-b-2 border-[#49656E]/20">
+                  {tx.remark}
+                </div>
+              </td>
+              <td className="table-item hover:bg-gray-50 font-semibold">
+                <div className="border-b-2 border-[#49656E]/20">
+                  {formatCurrency(tx.amount)}
+                </div>
+              </td>
+              <td className="table-item hover:bg-gray-50">
+                <div className="border-b-2 border-[#49656E]/20">
+                  {tx.currency}
+                </div>
+              </td>
               <td className="hover:bg-gray-50 border-b-3 border-[#49656E]/20 cursor-pointer">
                 <div className="table-item-status">
                   <span

@@ -30,11 +30,11 @@
   }
 
   .table-item {
-    @apply cursor-pointer font-medium p-2 text-lg border-b-3 border-[#49656E]/20;
+    @apply cursor-pointer font-medium p-2 ;
   }
 
   .table-item-status {
-    @apply  rounded-2xl bg-[#386776]/20 text-[#1B2528] font-medium text-xl py-1 px-3 flex items-center gap-2
+    @apply  rounded-2xl bg-[#386776]/20 text-[#1B2528] font-medium px-3 flex items-center gap-2
   }
 
  
