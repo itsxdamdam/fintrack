@@ -33,28 +33,28 @@ const TransactionsTable: React.FC<TransactionsTableProps> = ({
   const toggleSort = () => setSortAsc((prev) => !prev);
 
   return (
-    <div className="mt-5 text-[#1B2528]">
-      <table className="border-seperate w-full">
+    <div className="mt-5 text-[#1B2528] overflow-x-auto">
+      <table className="border-seperate w-full table-auto">
         <thead>
           <tr className="text-left">
             <th
               onClick={toggleSort}
-              className="table-item text-[#15272D]/60 w-84"
+              className="table-item text-[#15272D]/60 md:w-84"
             >
               <div className="border-b-2 border-[#49656E]/20">
                 Date {sortAsc ? "▲" : "▼"}
               </div>
             </th>
-            <th className="table-item text-[#15272D]/60 w-50">
+            <th className="table-item text-[#15272D]/60 md:w-50">
               <div className="border-b-2 border-[#49656E]/20">Remark ▼</div>
             </th>
-            <th className="table-item text-[#15272D]/60 w-50">
+            <th className="table-item text-[#15272D]/60 md:w-50">
               <div className="border-b-2 border-[#49656E]/20">Amount ▼</div>
             </th>
-            <th className="table-item text-[#15272D]/60 w-50">
+            <th className="table-item text-[#15272D]/60 md:w-50">
               <div className="border-b-2 border-[#49656E]/20">Currency ▼</div>
             </th>
-            <th className="table-item text-[#15272D]/60 w-40">
+            <th className="table-item text-[#15272D]/60 md:w-40">
               <div className="border-b-2 border-[#49656E]/20">Type ▼</div>
             </th>
           </tr>

@@ -35,5 +35,9 @@ export interface HeaderBoxProps {
 }
 
 export interface SidebarProps {
-  showSidebar: boolean
+  showSidebar: boolean;
+}
+
+export interface NavbarProps {
+  sidebarMenu: () => void;
 }

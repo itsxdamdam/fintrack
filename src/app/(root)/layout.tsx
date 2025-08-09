@@ -11,12 +11,12 @@ export default function RootLayout({
 }>) {
   const [showSidebar, setShowSidebar] = useState(false);
 
-  const handleSidebar = () => {
+  const toggleSidebar = () => {
     setShowSidebar((prev) => !prev);
   };
   return (
     <main className="main-container">
-      <Navbar menu={handleSidebar} />
+      <Navbar sidebarMenu={toggleSidebar} />
       <div className="flex mt-10">
         <Sidebar showSidebar={showSidebar} />
         {children}

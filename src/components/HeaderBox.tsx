@@ -6,7 +6,7 @@ import React from "react";
 const HeaderBox = ({ title, status }: HeaderBoxProps) => {
   return (
     <header className="w-full">
-      <div className="flex justify-between items-start">
+      <div className="flex justify-between items-start flex-wrap md:flex-nowrap">
         <div className="flex flex-col justify-between items-start gap-5">
           <div className="header-box-title gap-1">
             <h1 className="text-5xl font-bold">{title}</h1>

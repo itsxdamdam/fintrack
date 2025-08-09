@@ -5,9 +5,9 @@ import Link from "next/link";
 import SearchBar from "./SearchBar";
 import { useState } from "react";
 import Modal from "./Modal";
-// import React from "react";
+import { NavbarProps } from "@/types";
 
-const Navbar = ({menu}) => {
+const Navbar = ({ sidebarMenu }: NavbarProps) => {
   const [showModal, setShowModal] = useState(false);
 
   const handleModal = () => {
@@ -19,7 +19,7 @@ const Navbar = ({menu}) => {
   return (
     <nav>
       <div>
-        <div className="flex justify-between items-center">
+        <div className="flex flex-wrap md:flex-nowrap justify-between items-center">
           <div className="flex gap-3 items-center">
             <Image
               src="/icons/menu.svg"
@@ -27,7 +27,7 @@ const Navbar = ({menu}) => {
               width={0}
               height={0}
               className="nav-icons"
-              onClick={menu}
+              onClick={sidebarMenu}
             />
             <Link href="/">
               <Image
