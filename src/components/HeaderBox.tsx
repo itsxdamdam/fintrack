@@ -78,8 +78,8 @@ const HeaderBox = ({ title, status }: HeaderBoxProps) => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center">
-          <button className="bg-[#4B8B9F] rounded-4xl text-[#020303] px-7 py-3 font-semibold text-xl mr-2">
+        <div className="flex justify-between items-center gap-2">
+          <button className="bg-[#4B8B9F] rounded-4xl text-[#020303] px-7 py-3 font-medium text-lg">
             Share
           </button>
           <button className="rounded-4xl text-[#020303] px-5 py-3 border-2 border-[#49656E]/20 font-bold text-xl">
