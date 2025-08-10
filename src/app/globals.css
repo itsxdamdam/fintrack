@@ -26,7 +26,7 @@
   }
 
   .user-icons {
-    @apply w-15 h-15;
+    @apply w-10 h-10 md:w-15 md:h-15;
   }
 
   .header-user-display {

@@ -9,7 +9,7 @@ const HeaderBox = ({ title, status }: HeaderBoxProps) => {
       <div className="flex justify-between items-start flex-wrap md:flex-nowrap">
         <div className="flex flex-col justify-between items-start gap-5">
           <div className="header-box-title gap-1">
-            <h1 className="text-5xl font-bold">{title}</h1>
+            <h1 className="md:text-5xl font-bold text-3xl">{title}</h1>
             <button>
               <Image
                 src="/icons/caret-down.svg"
@@ -61,7 +61,7 @@ const HeaderBox = ({ title, status }: HeaderBoxProps) => {
                 className="user-icons  ml-[-15px] z-3"
               />
             </div>
-            <div className="flex items-center text-xl gap-2">
+            <div className="flex items-center md:text-xl text-lg gap-2">
               {headerBoxNames.map((user, index) => {
                 {
                   if (index < 3) {
@@ -79,10 +79,10 @@ const HeaderBox = ({ title, status }: HeaderBoxProps) => {
           </div>
         </div>
         <div className="flex justify-between items-center gap-2">
-          <button className="bg-[#4B8B9F] rounded-4xl text-[#020303] px-7 py-3 font-medium text-lg">
+          <button className="bg-[#4B8B9F] rounded-4xl text-[#020303] px-7 py-2 font-medium md:text-lg text-sm">
             Share
           </button>
-          <button className="rounded-4xl text-[#020303] px-5 py-3 border-2 border-[#49656E]/20 font-bold text-xl">
+          <button className="rounded-4xl text-[#020303] px-5 py-2 border-2 border-[#49656E]/20">
             <Image
               src="/icons/Union.svg"
               alt="ellipsis"

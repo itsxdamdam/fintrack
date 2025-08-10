@@ -12,12 +12,12 @@ export default function Tabs() {
 
   return (
     <div className="w-full mt-3">
-      <div className="flex border-b-3 my-0 top-15 border-[#15272D]/20 ">
+      <div className="flex border-b-1 my-0 top-15 border-[#15272D]/20 ">
         <button
           onClick={() => setActiveTab("Overview")}
           className={`text-xl py-2 font-medium w-[200px] cursor-pointer ${
             activeTab === "Overview"
-              ? "border-b-3 text-[#437D8E]"
+              ? "border-b-2 text-[#437D8E]"
               : "text-gray-600"
           }`}
         >
@@ -27,7 +27,7 @@ export default function Tabs() {
           onClick={() => setActiveTab("Transactions")}
           className={`text-xl py-2 font-medium  w-[200px] left-[220px] cursor-pointer ${
             activeTab === "Transactions"
-              ? "border-b-3 text-[#437D8E]"
+              ? "border-b-2 text-[#437D8E]"
               : "text-gray-600"
           }`}
         >
@@ -35,7 +35,7 @@ export default function Tabs() {
         </button>
       </div>
 
-      <div className="">
+      <div>
         {activeTab === "Overview" && <OverviewTab />}
         {activeTab === "Transactions" && (
           <TransactionsTable transactions={transactionsData} />
